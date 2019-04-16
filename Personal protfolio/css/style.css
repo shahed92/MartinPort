@@ -1,0 +1,637 @@
+/*===========================Some CSS Imports========================*/
+@import url('https://fonts.googleapis.com/css?family=Charmonman');
+
+/*===========================Some CSS Variable========================*/
+:root {
+    --main-bg-color: coral; 
+    --hover-color:#fac921;
+    --active-color:red;
+    --text-white:#fff;
+    --f-f:Futura Std Medium; 
+}
+
+
+/*===========================Global CSS========================*/
+*,::after,::before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: var(--f-f);
+}
+section , header{
+    overflow: hidden;
+    margin-bottom: 100px;
+}
+
+/*===========================main custom CSS========================*/
+.showcase{
+    background: url(../images/header-bg.jpg) no-repeat;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+    
+}
+.navbar{
+    padding-top: 34px;
+}
+.navbar a{
+   color: var(--text-white) !important;
+    text-transform: capitalize;
+    font-size: 20px;
+}
+.navbar-light{
+    background-color: transparent !important;
+}
+
+.navbar-light .navbar-toggler {
+    background-color: #fff;
+    color: rgba(0,0,0,.5);
+    border-color: rgba(0,0,0,.1);
+}
+.navbar ul li{
+    padding-right: 28px;
+    
+}
+.nav-item .active,a:hover{
+    color:var(--hover-color) !important;
+}
+.hero-caption{
+    color: var(--text-white);
+    position: absolute;
+    top: 40%;
+    left: 14%;
+        
+}
+.hero-name{
+    text-transform: uppercase;
+}
+.hero-name h4{
+    padding: 5px;
+}
+
+.btn-upper button{
+    width: 140px;
+    padding: 10px 0px;
+    background-color: transparent;
+    color: var(--text-white);
+    border: 1px solid white;
+    margin-left: 3px;
+    margin-top: 15px;
+    text-transform: inherit;
+    font-size: 20px;
+    margin-right: 10px;
+    
+}
+button:hover{
+    background-color: var(--hover-color);
+    color: black;
+}
+.follow-me{
+    color: var(--text-white);
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    font-size: 20px;
+    background-color: rgba(99,95,95,0.27);
+    
+    width: 40%;
+    height: 15%;
+   align-items: center;
+    text-transform: uppercase;
+    padding-left: 40px;
+    
+}
+.follow-me ul li{
+    display: inline-flex;
+    padding-left: 20px;
+    font-size: 22px;
+        
+}
+.follow-me ul li i{
+    color: aliceblue;
+    padding-top:18px;
+        
+}
+.follow-me ul li i:hover{
+    color: var(--hover-color);
+        
+}
+
+
+/*===========================about custom CSS========================*/
+
+
+.about-me img{
+    height: 65vh;
+    width: 25vw;
+    box-shadow:20px 20px #c8cbce;
+}
+
+.about-collaps{
+    padding-top: 50px;
+    padding-left: 40px;
+}
+.section-sign{
+    font-size: 50px;
+    color:#444444;
+}
+.section-sign::after{
+   content: '';
+    display:block;
+    width: 5vw;
+    border-bottom: 2px solid var(--hover-color);
+    padding-top: 10px;
+}
+
+.btn-collaps{
+        width: 30%;
+    float: left;
+}
+.expend-area{
+        float: right;
+    width: 66%;
+}
+
+.btn-link{
+    color: grey;
+    display: flex;
+    text-transform: uppercase;
+    
+}
+.btn-collaps   .active::before{
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f105";
+    padding-right: 2px;
+}
+.btn-collaps  .btn:hover{
+    color: #54595f;
+    text-decoration: none;
+}
+.btn-collaps  .btn:hover::before{
+     font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f105";
+    padding-right: 2px;
+}
+
+/*===========================who i am// protfolio custom CSS========================*/
+.protfolio{
+    margin-top: 100px;
+ 
+}
+.section-name{
+margin-left: 40%;
+    padding-top: 50px;
+}
+.section-name p{
+        line-height: 29px;
+    font-size: 20px;
+    color: #a5a0a0;
+    margin-right: 150px;
+}
+
+.protfolio .container{
+    background-color: #f8f8f8;
+    padding-bottom: 35px;
+}
+.protfolio .row{
+        margin: 40px;
+    margin-left: 46px;
+}
+.card{
+    text-align: center;
+    text-transform: uppercase;
+        width: 300px;
+    height: 250px;
+        
+    
+    box-shadow: 1px 5px 14px -8px;
+
+}
+
+.protfolio i{
+        font-size: 100px;
+    padding-top: 35px;
+    color: var(--hover-color);
+    
+}
+.card:hover{
+    background-color: var(--hover-color);
+}
+.card:hover i{
+    color: #fff;
+}
+
+
+/*===========================why chose me  custom CSS========================*/
+
+.why-me{
+        background-color: #fbfbfb;
+}
+.skill-row{
+        margin-top: 70px;
+    padding-bottom: 50px;
+}
+.skill-row .col-md-4{
+    margin-left: 140px
+}
+.skill-cap{
+    float: left;
+    padding-right: 38px;
+    position: relative;
+}
+ .photo-design::before{
+    content: "\f083";
+      font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 37px;
+    width: 63px;
+    height: 63px;
+    position: absolute;
+    background-color: var(--hover-color);
+    border-radius: 50%;
+    text-align: center;
+    margin-left: -88px;
+     color: #666666;
+     padding: 3px;
+}
+ .web-design::before{
+    content: "\f26c";
+      font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 37px;
+    width: 63px;
+    height: 63px;
+    position: absolute;
+    background-color: var(--hover-color);
+    border-radius: 50%;
+    text-align: center;
+    margin-left: -88px;
+     color: #666666;
+     padding: 6px;
+}
+ .app-design::before{
+    content: "\f135";
+      font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 37px;
+    width: 63px;
+    height: 63px;
+    position: absolute;
+    background-color: var(--hover-color);
+    border-radius: 50%;
+    text-align: center;
+    margin-left: -88px;
+     color: #666666;
+     padding: 5px;
+
+}
+ .seo::before{
+    content: "\f201";
+      font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 37px;
+    width: 63px;
+    height: 63px;
+    position: absolute;
+    background-color: var(--hover-color);
+    border-radius: 50%;
+    text-align: center;
+    margin-left: -88px;
+     color: #666666;
+     padding: 4px;
+
+}
+.skill-name{
+        text-transform: uppercase;
+    font-size: 17px;
+}
+.skill-cap p{
+    color: #b1b1b1;
+}
+.progress{
+    height: .2rem;
+    margin-top: 17px;
+}
+.progress-bar{
+    background-color: var(--hover-color);
+}
+
+
+.work-btn-group .btn{
+        width: 9rem;
+    height: 4vw;
+    margin: 25px;
+    background-color: transparent;
+    text-transform: lowercase;
+    color: var(--darkgrey);
+    border: 1.4px solid #ffc107;
+    letter-spacing: 1px;
+    font-size: 1.1rem;
+    transition: 500ms ease-in-out;
+    transition-property: all;
+}
+.work-btn-group i{
+    padding: 4px;
+}
+
+.work-btn-group .active{
+    background-color: var(--hover-color) !important;
+    border:none;
+    color: var(--darkgrey) !important;
+    transform: rotate(3deg);
+    
+}
+.work-btn-group .btn:hover{
+    background-color: var(--hover-color);
+    transform: rotate(3deg);
+}
+/*work slider*/
+.work-slider{
+    background-color: #fbfbfb;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+}
+.work-slider img{
+    width: 24%;
+    
+    padding-top: 40px;
+   
+}
+.carousel-item img:nth-child(1){
+    opacity: .6;
+}
+.carousel-item img:nth-child(3){
+    opacity: .6;
+}
+.carousel-item img:nth-child(4){
+    opacity: .6;
+}
+
+.carousel-indicators{
+    bottom: -43px;
+}
+.carousel-indicators li{
+    background-color:yellow;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+.carousel-indicators .active{
+    background-color: var(--hover-color) !important;
+}
+
+/*===========================hire me custom CSS========================*/
+.hire-me{
+    height: 180px;
+    background-color: var(--hover-color);
+    border-radius: 10px;
+    color: #444444;
+    position: relative;
+    padding-left: 90px;
+}
+.hire-me span{
+    text-transform: capitalize;
+}
+.hire-me span::after{
+     content: '';
+    display:block;
+    position: absolute;
+    width: 4vw;
+    border-bottom: 2px solid #fff;
+    padding-top: 10px;
+    
+}
+.hire-me h3{
+    padding-top: 40px;
+    text-transform: ;
+}
+.hire-me p{
+    line-height: 1.5rem;
+    width: 90vh;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+.hire-btn{
+    position: absolute;
+    right:5%;
+    top: 40%;
+    background-color: #fff;
+    color: #000;
+    padding: 8px 26px;
+    border: none;
+    box-shadow: 0px 1px 4px 1px;
+                
+    text-transform: capitalize;
+    transition: 500ms;
+}
+.hire-btn:hover{
+    background-color: black;
+    color: #fff;
+}
+
+/*===========================testimonial section custom CSS========================*/
+
+.testimonial .section-name{
+    margin-left: 50%;
+}
+
+.happy-client h2{
+        font-size: 2rem;
+    text-transform: capitalize;
+    color: #444;
+    padding: 25px 0px;
+    letter-spacing: 1px;
+}
+.happy-client p{
+    font-size: 1.2rem;
+    color: #9999;
+}
+.client-quote{
+        color: #888;
+    font-size: 1.2rem;
+    font-style: oblique;
+    word-spacing: 2px;
+}
+ .client-quote::before{
+    content: open-quote;
+    padding: 5px;
+}
+.client-quote::after{
+    content: close-quote;
+    padding: 5px;
+}
+figure{
+    display: flex;
+}
+figcaption{
+    padding-top: 6px;
+    padding-left: 20px;
+}
+.client-img{
+    position: relative;
+}
+.client-img img:nth-child(1){
+    position: absolute;
+    top: 70%;
+    left: 20%
+}
+.client-img img:nth-child(2){
+    position: absolute;
+  left: 50%;
+    top: 50%;
+    border: 2px solid var(--hover-color);
+    border-radius: 50%
+}
+.client-img img:nth-child(3){
+    position: absolute;
+    top: 30%;
+    left: 10%;
+}
+.client-img img:nth-child(4){
+    position: absolute;
+    top: 10%;
+    left: 60%;
+}
+
+/*===========================Blog section custom CSS========================*/
+
+
+.blog-section .section-name{
+margin-left: 50%;
+    padding-top: 50px;
+}
+.blog-img{
+    background-image: url(../images/update.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width:50%;
+    height: 60%;
+    position: absolute;
+    left: 0;
+}
+.blog-img-caption{
+        background: #F8F8F8;
+    height: 11rem;
+    width: 50vw;
+    padding: 2rem;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    top: 59%;
+    left: 28%;
+    border-radius: 10px;
+   
+     
+    
+}
+.blog-read{
+    position: absolute;
+    right:0;
+    margin-top: 130px;
+}
+.blog-read hr{
+    width: 60%;
+    padding: 10px;
+}
+.blog-read h5{
+    font-size: 28px;
+    font-weight: bold;
+    padding: 10px;
+}
+.blog-read p{
+    font-size: 1.1rem;
+    line-height: 2;
+    opacity: .7;
+}
+
+/*===========================footer section custom CSS========================*/
+
+.footer{
+    background: url(../images/footer-bg.jpg) no-repeat;
+        background-size: cover;
+    height: 100vh;
+    position: relative;
+    margin-top: 407px;
+}
+
+.footer-address{
+        width: 350px;
+    height: 360px;
+    background-color: #fff;
+    margin-top: 100px;
+    padding-top: 45px;
+    padding-left: 50px;
+}
+.location{
+        
+}
+.location strong{
+        font-size: 20px;
+    text-transform: capitalize;
+}
+.location p{
+    line-height: 20px;
+}
+.footer-follow span{
+        font-size: 20px;
+    text-transform: uppercase;
+    float: left;
+}
+.footer-follow ul li{
+    list-style: none;
+    display: inline-block;
+        padding-left: 18px;
+    font-size: 20px;
+}
+.footer-follow ul li a{
+    color: gray;
+}
+ footer hr{
+    
+    border: 1px solid #777775;
+    margin-top: 100px;
+}
+
+.copy-right{
+    color: #fff;
+    text-align: center
+}
+.footer-login{
+    margin-top: 120px;
+    margin-left: -71px;
+}
+
+.query input,
+.query textarea
+{
+    background: transparent;
+    border: 1px solid white !important;
+}
+.query .subject{
+    
+    margin: 16px 0px;
+}
+.query textarea{
+        
+    
+    margin: 30px 0px;
+    height: 120px;
+}
+::-webkit-input-placeholder
+{ /* Edge */
+  color: #fff !important;
+    font-size: 20px !important;
+    text-transform: capitalize;
+}
